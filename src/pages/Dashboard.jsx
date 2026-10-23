@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
-import { reactTopics } from "../data/reactTopics";
+import { reactTopics } from "../data/ReactTopics";
 import "./Dashboard.css";
 
 function Dashboard() {
