@@ -2,6 +2,7 @@
 import { useState } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,10 +14,10 @@ function Header() {
     <header className="header-wrapper">
       <div className="header">
         {/* Logo */}
-        <a href="/" className="header-logo">
-     <img src="src/assets/logo.png" alt="UnlockedReact" />
-     <span className="logo-text">Unlocked-React</span>
-        </a>
+        <Link to="/" className="header-logo">
+          <img src={logo} alt="" />
+          <span className="logo-text">Unlocked-React</span>
+        </Link>
 
         {/* Navigation */}
         <nav className={`header-nav ${menuOpen ? "open" : ""}`}>

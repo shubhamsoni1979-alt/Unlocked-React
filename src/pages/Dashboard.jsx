@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { reactTopics } from "../data/ReactTopics";
+import logo from "../assets/logo.png";
 import "./Dashboard.css";
 
 function Dashboard() {
@@ -52,7 +53,7 @@ function Dashboard() {
       <aside className={`tutorial-sidebar ${sidebarOpen ? "open" : ""}`}>
         <div className="tutorial-sidebar-top">
           <Link to="/" className="tutorial-brand">
-            <img src="/src/assets/logo.png" alt="Unlocked-React" />
+            <img src={logo} alt="" />
             <span>Unlocked-React</span>
           </Link>
           <span className="tutorial-section-label">DOCUMENTATION</span>
